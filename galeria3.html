@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galería 3 — TuNombre</title>
+  <meta name="description" content="Galería de ilustraciones">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><circle cx=%2750%27 cy=%2750%27 r=%2730%27 fill=%27%237c3aed%27/></svg>">
+</head>
+<body>
+
+    <header class="header">
+      <nav class="nav container">
+        <a class="brand" href="index.html"><span class="dot"></span> <span>TuNombre·Ilustración</span></a>
+        <div class="menu">
+          <a href="galeria1.html" class="">Galería 1</a>
+          <a href="galeria2.html" class="">Galería 2</a>
+          <a href="galeria3.html" class="active">Galería 3</a>
+          <a href="proyectos.html" class="">Proyectos</a>
+          <a href="sobre.html" class="">Sobre mí</a>
+          <a href="contacto.html" class="">Contacto</a>
+        </div>
+      </nav>
+    </header>
+    
+
+  <section class="container">
+    <h1>Galería 3 — TuNombre</h1>
+    <p class="muted">Haz clic en cualquier imagen para abrirla. Desliza en móvil o usa flechas en ordenador para navegar.</p>
+    <div class="gallery" data-gallery="galeria3">
+    <figure>
+      <img loading="lazy" src="assets/images/galeria3/img01.svg" alt="Obra 1 de la galería3">
+      <figcaption>Pieza 1</figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="assets/images/galeria3/img02.svg" alt="Obra 2 de la galería3">
+      <figcaption>Pieza 2</figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="assets/images/galeria3/img03.svg" alt="Obra 3 de la galería3">
+      <figcaption>Pieza 3</figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="assets/images/galeria3/img04.svg" alt="Obra 4 de la galería3">
+      <figcaption>Pieza 4</figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="assets/images/galeria3/img05.svg" alt="Obra 5 de la galería3">
+      <figcaption>Pieza 5</figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="assets/images/galeria3/img06.svg" alt="Obra 6 de la galería3">
+      <figcaption>Pieza 6</figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="assets/images/galeria3/img07.svg" alt="Obra 7 de la galería3">
+      <figcaption>Pieza 7</figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="assets/images/galeria3/img08.svg" alt="Obra 8 de la galería3">
+      <figcaption>Pieza 8</figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="assets/images/galeria3/img09.svg" alt="Obra 9 de la galería3">
+      <figcaption>Pieza 9</figcaption>
+    </figure>
+    </div>
+  </section>
+
+  <!-- Lightbox / Carousel -->
+  <div class="lightbox" id="lightbox" data-gallery="galeria3">
+    <div class="panel">
+      <div class="carousel" data-current="0">
+      <div class="slide active" data-index="0">
+        <img src="assets/images/galeria3/img01.svg" alt="Obra 1 en detalle">
+      </div>
+      <div class="slide" data-index="1">
+        <img src="assets/images/galeria3/img02.svg" alt="Obra 2 en detalle">
+      </div>
+      <div class="slide" data-index="2">
+        <img src="assets/images/galeria3/img03.svg" alt="Obra 3 en detalle">
+      </div>
+      <div class="slide" data-index="3">
+        <img src="assets/images/galeria3/img04.svg" alt="Obra 4 en detalle">
+      </div>
+      <div class="slide" data-index="4">
+        <img src="assets/images/galeria3/img05.svg" alt="Obra 5 en detalle">
+      </div>
+      <div class="slide" data-index="5">
+        <img src="assets/images/galeria3/img06.svg" alt="Obra 6 en detalle">
+      </div>
+      <div class="slide" data-index="6">
+        <img src="assets/images/galeria3/img07.svg" alt="Obra 7 en detalle">
+      </div>
+      <div class="slide" data-index="7">
+        <img src="assets/images/galeria3/img08.svg" alt="Obra 8 en detalle">
+      </div>
+      <div class="slide" data-index="8">
+        <img src="assets/images/galeria3/img09.svg" alt="Obra 9 en detalle">
+      </div>
+        <button class="arrow left" data-dir="-1" aria-label="Anterior">◀</button>
+        <button class="arrow right" data-dir="1" aria-label="Siguiente">▶</button>
+      </div>
+      <div class="controls">
+        <button class="btn icon" id="prevBtn">← Anterior</button>
+        <div><span id="counter">1</span> / 9</div>
+        <button class="btn icon" id="nextBtn">Siguiente →</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer container">
+    © <span id="y"></span> TuNombre — Todos los derechos reservados · <a class="underline" href="sitemap.xml">sitemap</a>
+  </footer>
+  <script src="assets/js/script.js" defer></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>

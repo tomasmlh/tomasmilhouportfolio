@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyectos — TuNombre</title>
+  <meta name="description" content="Proyectos y procesos de trabajo">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><circle cx=%2750%27 cy=%2750%27 r=%2730%27 fill=%27%237c3aed%27/></svg>">
+</head>
+<body>
+
+    <header class="header">
+      <nav class="nav container">
+        <a class="brand" href="index.html"><span class="dot"></span> <span>TuNombre·Ilustración</span></a>
+        <div class="menu">
+          <a href="galeria1.html" class="">Galería 1</a>
+          <a href="galeria2.html" class="">Galería 2</a>
+          <a href="galeria3.html" class="">Galería 3</a>
+          <a href="proyectos.html" class="active">Proyectos</a>
+          <a href="sobre.html" class="">Sobre mí</a>
+          <a href="contacto.html" class="">Contacto</a>
+        </div>
+      </nav>
+    </header>
+    
+
+  <section class="container">
+    <h1>Proyectos</h1>
+    <p class="muted">Aquí comparto procesos, bocetos y estudios. Puedes duplicar y editar estas tarjetas para añadir tus proyectos.</p>
+    <div class="grid cols-2">
+      <article class="post">
+        <h3>Proyecto 1 — Criaturas del Bosque</h3>
+        <p class="meta">Publicado el <time datetime="2025-01-15">15 ene 2025</time> · Etiquetas: criaturas, color</p>
+        <p>Exploraciones de siluetas y color script para una serie de criaturas. Me enfoqué en contrastes cálidos/fríos y formas orgánicas.</p>
+        <img src="assets/images/galeria3/img04.svg" alt="Proceso del Proyecto 1" style="width:100%;border-radius:12px;margin-top:8px">
+      </article>
+      <article class="post">
+        <h3>Proyecto 2 — Retratos Editoriales</h3>
+        <p class="meta">Publicado el <time datetime="2025-03-08">8 mar 2025</time> · Etiquetas: retrato, editorial</p>
+        <p>Serie de retratos con enfoque en iluminación dura y texturas de pincel.</p>
+        <img src="assets/images/galeria2/img05.svg" alt="Proceso del Proyecto 2" style="width:100%;border-radius:12px;margin-top:8px">
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer container">
+    © <span id="y"></span> TuNombre — Todos los derechos reservados · <a class="underline" href="sitemap.xml">sitemap</a>
+  </footer>
+  <script src="assets/js/script.js" defer></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>

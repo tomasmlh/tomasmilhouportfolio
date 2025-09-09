@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio de Ilustración — TuNombre</title>
+  <meta name="description" content="Portfolio de ilustración de TuNombre">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><circle cx=%2750%27 cy=%2750%27 r=%2730%27 fill=%27%237c3aed%27/></svg>">
+</head>
+<body>
+
+    <header class="header">
+      <nav class="nav container">
+        <a class="brand" href="index.html"><span class="dot"></span> <span>TuNombre·Ilustración</span></a>
+        <div class="menu">
+          <a href="galeria1.html" class="">Galería 1</a>
+          <a href="galeria2.html" class="">Galería 2</a>
+          <a href="galeria3.html" class="">Galería 3</a>
+          <a href="proyectos.html" class="">Proyectos</a>
+          <a href="sobre.html" class="">Sobre mí</a>
+          <a href="contacto.html" class="">Contacto</a>
+        </div>
+      </nav>
+    </header>
+    
+
+  <section class="hero container">
+    <div>
+      <h1>Ilustración & Concept Art</h1>
+      <p>Bienvenida/o a mi portfolio. Aquí encontrarás una selección de mis trabajos de ilustración, desde personajes y criaturas hasta escenas completas. Explora las galerías o visita la sección de proyectos para ver procesos y bocetos.</p>
+      <div class="badges">
+        <span class="badge">Digital</span><span class="badge">Editorial</span><span class="badge">Personaje</span><span class="badge">Fantasía</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/galeria1/img01.svg" alt="Ilustración destacada" style="width:100%;height:100%;object-fit:cover">
+    </div>
+  </section>
+
+  <div class="container grid cols-3">
+    <a class="card" href="galeria1.html">
+      <img src="assets/images/galeria1/img02.svg" alt="Galería 1" style="width:100%;height:220px;object-fit:cover">
+      <div class="p"><h3>Galería 1</h3><p class="muted">Selección de piezas — personajes</p></div>
+    </a>
+    <a class="card" href="galeria2.html">
+      <img src="assets/images/galeria2/img02.svg" alt="Galería 2" style="width:100%;height:220px;object-fit:cover">
+      <div class="p"><h3>Galería 2</h3><p class="muted">Ilustraciones editoriales</p></div>
+    </a>
+    <a class="card" href="galeria3.html">
+      <img src="assets/images/galeria3/img02.svg" alt="Galería 3" style="width:100%;height:220px;object-fit:cover">
+      <div class="p"><h3>Galería 3</h3><p class="muted">Exploraciones y color scripts</p></div>
+    </a>
+  </div>
+
+  <footer class="footer container">
+    © <span id="y"></span> TuNombre — Todos los derechos reservados · <a class="underline" href="sitemap.xml">sitemap</a>
+  </footer>
+  <script src="assets/js/script.js" defer></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre mí — TuNombre</title>
+  <meta name="description" content="Biografía y contacto de TuNombre">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><circle cx=%2750%27 cy=%2750%27 r=%2730%27 fill=%27%237c3aed%27/></svg>">
+</head>
+<body>
+
+    <header class="header">
+      <nav class="nav container">
+        <a class="brand" href="index.html"><span class="dot"></span> <span>TuNombre·Ilustración</span></a>
+        <div class="menu">
+          <a href="galeria1.html" class="">Galería 1</a>
+          <a href="galeria2.html" class="">Galería 2</a>
+          <a href="galeria3.html" class="">Galería 3</a>
+          <a href="proyectos.html" class="">Proyectos</a>
+          <a href="sobre.html" class="active">Sobre mí</a>
+          <a href="contacto.html" class="">Contacto</a>
+        </div>
+      </nav>
+    </header>
+    
+
+  <section class="container grid cols-2">
+    <div class="card"><img src="assets/images/galeria2/img03.svg" alt="Retrato o imagen representativa" style="width:100%;height:100%;object-fit:cover"></div>
+    <div>
+      <h1>Sobre mí</h1>
+      <p>¡Hola! Soy <strong>TuNombre</strong>, ilustradora/or especializada/o en personajes, fantasía y arte conceptual. Me interesa construir mundos visuales con narrativa y emoción.</p>
+      <p>He trabajado en encargos editoriales, portadas y material promocional. También desarrollo proyectos personales que podrás ver en la sección de proyectos.</p>
+      <hr>
+      <p><strong>Herramientas:</strong> Procreate, Photoshop, Clip Studio, Blender.</p>
+      <p><strong>Disponible para encargos</strong>. Escríbeme desde la sección <a class="underline" href="contacto.html">Contacto</a>.</p>
+    </div>
+  </section>
+
+  <footer class="footer container">
+    © <span id="y"></span> TuNombre — Todos los derechos reservados · <a class="underline" href="sitemap.xml">sitemap</a>
+  </footer>
+  <script src="assets/js/script.js" defer></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>

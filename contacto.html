@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto — TuNombre</title>
+  <meta name="description" content="Formulario de contacto">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><circle cx=%2750%27 cy=%2750%27 r=%2730%27 fill=%27%237c3aed%27/></svg>">
+</head>
+<body>
+
+    <header class="header">
+      <nav class="nav container">
+        <a class="brand" href="index.html"><span class="dot"></span> <span>TuNombre·Ilustración</span></a>
+        <div class="menu">
+          <a href="galeria1.html" class="">Galería 1</a>
+          <a href="galeria2.html" class="">Galería 2</a>
+          <a href="galeria3.html" class="">Galería 3</a>
+          <a href="proyectos.html" class="">Proyectos</a>
+          <a href="sobre.html" class="">Sobre mí</a>
+          <a href="contacto.html" class="active">Contacto</a>
+        </div>
+      </nav>
+    </header>
+    
+
+  <section class="container">
+    <h1>Contacto</h1>
+    <p class="muted">Completa el formulario y se abrirá Gmail con un borrador listo para enviar. Sustituye <code>tuemail@gmail.com</code> por tu correo en el archivo <code>contacto.html</code> o en <code>script.js</code>.</p>
+
+    <form id="contactForm" class="grid cols-2" onsubmit="return openGmail(event)">
+      <div>
+        <label for="name">Nombre</label>
+        <input class="input" id="name" name="name" placeholder="Tu nombre" required>
+      </div>
+      <div>
+        <label for="from">Tu email</label>
+        <input class="input" id="from" name="from" type="email" placeholder="tucorreo@ejemplo.com" required>
+      </div>
+      <div style="grid-column: 1 / -1">
+        <label for="subject">Asunto</label>
+        <input class="input" id="subject" name="subject" placeholder="Solicitud de presupuesto / Encargo" required>
+      </div>
+      <div style="grid-column: 1 / -1">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="6" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+      </div>
+      <div style="grid-column: 1 / -1; display:flex; gap:12px; align-items:center">
+        <button class="primary" type="submit">Redactar en Gmail</button>
+        <span class="muted">O envía directamente a: <a class="underline" href="mailto:tuemail@gmail.com">tuemail@gmail.com</a></span>
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer container">
+    © <span id="y"></span> TuNombre — Todos los derechos reservados · <a class="underline" href="sitemap.xml">sitemap</a>
+  </footer>
+  <script src="assets/js/script.js" defer></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
